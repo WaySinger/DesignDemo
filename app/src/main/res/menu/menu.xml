@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/download"
+        android:icon="@drawable/bs_download"
+        android:title="@string/download" />
+    <item
+        android:id="@+id/like"
+        android:icon="@drawable/bs_like"
+        android:title="@string/like" />
+    <item
+        android:id="@+id/answer"
+        android:icon="@drawable/bs_answer"
+        android:title="@string/answer" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/bs_share"
+        android:title="@string/share" />
+
+    <group android:id="@+id/helpgroup">
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/bs_help"
+            android:title="@string/help" />
+    </group>
+</menu>

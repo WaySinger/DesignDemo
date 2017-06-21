@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerlayout"
+    tools:context="com.lenovo.way.designdemo.NavigationMenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是主页面"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/btn_nv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="侧滑菜单"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/menu_nv">
+    </android.support.design.widget.NavigationView>
+
+    <!--app:headerLayout="@layout/menu_header" 菜单头部布局-->
+    <!--app:menu="@menu/menu_nv" 菜单文件-->
+    <!--app:itemBackground="@color/colorAccent"设置每一个item的背景颜色-->
+    <!--app:itemTextColor=""设置item的背景颜色-->
+
+</android.support.v4.widget.DrawerLayout>
